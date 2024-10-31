@@ -1,5 +1,9 @@
 ## Como usar o Fronted
 
+### Instalando as dependencias
+`npm install`
+
+### Executando o front
 `npm run start`
 
 ## Como usar o Backend
@@ -9,7 +13,9 @@
 
 ### Ativando o ambiente virtual
 `source .back/bin/activate`
-pip install -r requirements.in
+
+### Instalando as dependencias
+`pip install -r requirements.in`
 
 ### Executando o back
 `uvicorn src.main:app --port 8000 --host 0.0.0.0`
