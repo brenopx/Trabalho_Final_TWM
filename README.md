@@ -5,10 +5,11 @@
 ## Como usar o Backend
 
 ### Criando o ambiente virtual
-`pthon3 -m venv .back`
+`python3 -m venv .back`
 
 ### Ativando o ambiente virtual
-`pthon3 -m venv .back`
+`source .back/bin/activate`
+pip install -r requirements.in
 
 ### Executando o back
 `uvicorn src.main:app --port 8000 --host 0.0.0.0`
