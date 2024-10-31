@@ -1,0 +1,1 @@
+export const SET_CONF = 'SET_CONFIGURATIONS';
