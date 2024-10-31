@@ -1,0 +1,32 @@
+version: '3'
+
+networks:
+  app-net:
+    driver: bridge
+
+services:
+  frontend:
+    image: frontend
+    container_name: frontend
+    build: 
+      dockerfile: Dockerfile
+      context: ./frontend
+    networks:
+      - app-net
+    restart: always
+    ports:
+      - 3000:3000
+
+  backend:
+    image: backend
+    container_name: backend
+    build: 
+      dockerfile: Dockerfile
+      context: ./backend
+    networks:
+      - app-net
+    restart: always
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend/db:/code/db
